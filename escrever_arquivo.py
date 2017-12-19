@@ -1,0 +1,5 @@
+arquivo = open("arquivo.txt", "w")
+arquivo.write("Texto a ser escrito.\n")
+arquivo.write("Texto a ser escrito.\n")
+arquivo.write("Texto a ser escrito.\n")
+arquivo.close()
