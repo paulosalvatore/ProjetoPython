@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3af0ac5b-4e81-4ee6-b66d-4b0eae6ad290" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dicionarios_alunos.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aula_x.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funcoes_argumentos_opcionais.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funcoes_basicas.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json_testes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tuplas.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -15,11 +19,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="dicionarios_alunos.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dicionarios_alunos.py">
+      <file leaf-file-name="json_testes.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/json_testes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="826">
-              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state relative-caret-position="218">
+              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="funcoes_argumentos_opcionais.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/funcoes_argumentos_opcionais.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="19" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="funcoes_basicas.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/funcoes_basicas.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aula_x.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aula_x.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -41,6 +75,7 @@
       <find>while</find>
       <find>'</find>
       <find />
+      <find>start</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -82,14 +117,20 @@
         <option value="$PROJECT_DIR$/revisando.py" />
         <option value="$PROJECT_DIR$/dicionarios_partidos.py" />
         <option value="$PROJECT_DIR$/dicionarios_alunos.py" />
+        <option value="$PROJECT_DIR$/json.py" />
+        <option value="$PROJECT_DIR$/tuplas.py" />
+        <option value="$PROJECT_DIR$/funcoes_argumentos_opcionais.py" />
+        <option value="$PROJECT_DIR$/funcoes_basicas.py" />
+        <option value="$PROJECT_DIR$/aula_x.py" />
+        <option value="$PROJECT_DIR$/json_testes.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-252" />
-    <option name="y" value="-31" />
-    <option name="width" value="1500" />
-    <option name="height" value="910" />
+    <option name="x" value="2451" />
+    <option name="y" value="-21" />
+    <option name="width" value="2765" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -144,7 +185,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ExerciciosPython" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/paulo/Documents/GitHub/ProjetoPython/string_funcao.py" />
   </component>
@@ -160,8 +201,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dicionarios_alunos">
-    <configuration name="dicionario_lista_inventario" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.json_testes">
+    <configuration name="aula_x" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -173,12 +214,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ProjetoPython" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dicionario_lista_inventario.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aula_x.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="dicionarios" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="funcoes_argumentos_opcionais" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -190,12 +231,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ProjetoPython" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dicionarios.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/funcoes_argumentos_opcionais.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="dicionarios_alunos" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="json" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -207,12 +248,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ProjetoPython" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dicionarios_alunos.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\paulo\Documents\GitHub\ProjetoPython\json_testes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="funcoes3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="json_testes" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -224,12 +265,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ProjetoPython" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/funcoes3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/json_testes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="revisando" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="tuplas" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -241,25 +282,25 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ProjetoPython" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/revisando.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tuplas.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.funcoes3" />
-      <item index="1" class="java.lang.String" itemvalue="Python.dicionarios" />
-      <item index="2" class="java.lang.String" itemvalue="Python.revisando" />
-      <item index="3" class="java.lang.String" itemvalue="Python.dicionario_lista_inventario" />
-      <item index="4" class="java.lang.String" itemvalue="Python.dicionarios_alunos" />
+      <item index="0" class="java.lang.String" itemvalue="Python.json" />
+      <item index="1" class="java.lang.String" itemvalue="Python.json_testes" />
+      <item index="2" class="java.lang.String" itemvalue="Python.tuplas" />
+      <item index="3" class="java.lang.String" itemvalue="Python.funcoes_argumentos_opcionais" />
+      <item index="4" class="java.lang.String" itemvalue="Python.aula_x" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.dicionarios_alunos" />
-        <item index="1" class="java.lang.String" itemvalue="Python.dicionario_lista_inventario" />
-        <item index="2" class="java.lang.String" itemvalue="Python.revisando" />
-        <item index="3" class="java.lang.String" itemvalue="Python.dicionarios" />
-        <item index="4" class="java.lang.String" itemvalue="Python.funcoes3" />
+        <item index="0" class="java.lang.String" itemvalue="Python.json_testes" />
+        <item index="1" class="java.lang.String" itemvalue="Python.aula_x" />
+        <item index="2" class="java.lang.String" itemvalue="Python.funcoes_argumentos_opcionais" />
+        <item index="3" class="java.lang.String" itemvalue="Python.tuplas" />
+        <item index="4" class="java.lang.String" itemvalue="Python.json" />
       </list>
     </recent_temporary>
   </component>
@@ -267,13 +308,13 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="1911" y="-9" width="1938" height="1038" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18098818" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18367347" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4863388" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40331492" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -295,48 +336,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fibonacci.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/split_reverse_join.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/escrever_arquivo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ler_arquivo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/split.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/join.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
@@ -618,14 +617,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dicionarios_alunos.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="826">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state relative-caret-position="316">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmEdu4.0/system/python_stubs/-1120166012/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="4507" column="32" lean-forward="false" selection-start-line="4507" selection-start-column="27" selection-end-line="4507" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tuplas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/funcoes_basicas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/funcoes_argumentos_opcionais.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="19" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aula_x.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json_testes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
           <folding />
         </state>
       </provider>
