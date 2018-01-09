@@ -1,13 +1,8 @@
-"""
-lista = [1, 2, 3, 4, 5]
+lista = [1, 2, 3, 4]
+for indice in range(len(lista)):
+	print(indice)
 
-for numero in lista:
-	numero_multiplicado = numero * 3
-	if numero_multiplicado % 2 == 0:
-		print(numero_multiplicado)
-"""
+print()
 
-animais = [5, 10, 1, 9, 37, 3]
-print(animais)
-animais.sort(reverse=True)
-print(animais)
+for valor in lista:
+	print(valor)

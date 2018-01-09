@@ -1,5 +1,22 @@
-import json
+dicionario = {1: 2, 3: 4}
+for indice, valor in dicionario.items():
+	print(indice, valor)
+
+lista = [1, 2, 3]
+for indice, valor in enumerate(lista):
+	print(indice, valor)
+
+
+
+
+
+
+
+
+
 """
+import json
+
 lista = [
 	1,
 	2,
@@ -16,7 +33,6 @@ print(type(lista))
 string_json = json.dumps(lista)
 print(string_json)
 print(type(string_json))
-"""
 
 texto = '[1, 2, 3, {"4": 5, "6": 7}]'
 print(type(texto))
@@ -28,7 +44,6 @@ print(lista_json[1])
 print(lista_json[2])
 print(type(lista_json[3]))
 
-"""
 dicionario = {
 	"teste1": 1,
 	"teste2": 2,

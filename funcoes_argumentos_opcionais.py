@@ -1,23 +1,19 @@
-def somar(a, b, exibir=False):
-	total = a + b
+def exibir_lista(lista, exibir_chave=False):
+	for chave in range(len(lista)):
+		valor = lista[chave]
+		if exibir_chave:
+			print("{}: {}".format(chave, valor))
+		else:
+			print("{}".format(valor))
 
+numeros = [10, 5, 6, 7, 9, 10]
+# exibir_lista(numeros, True)
+
+
+def somar_tudo(*numeros, exibir=False):
+	total = sum(numeros)
 	if exibir:
 		print(total)
-
 	return total
 
-numero1 = 10
-numero2 = 20
-resultado = somar(numero1, numero2, False)
-
-
-def exibir(lista, exibir_chaves=False):
-	for chave in range(len(lista)):
-		item = lista[chave]
-		if exibir_chaves:
-			print("Chaves: {}, Valor: {}".format(chave, item))
-		else:
-			print("Valor: {}".format(item))
-
-numeros = [1, 2, 3, 4, 5, 1, 2, 6, 7]
-exibir(numeros, exibir_chaves=True)
+resultado = somar_tudo(1, 2, 3, 4, 5, 6, 7, exibir=True)
