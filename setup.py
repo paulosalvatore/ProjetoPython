@@ -3,7 +3,7 @@ from cx_Freeze import setup, Executable
 base = None
 
 
-executables = [Executable("revisao.py", base=base)]
+executables = [Executable("tratar_contatos.py", base=base)]
 
 packages = ["idna"]
 options = {
@@ -15,9 +15,9 @@ options = {
 }
 
 setup(
-    name = "teste",
+    name = "Tratar Contatos",
     options = options,
     version = "1.0",
-    description = 'asd',
+    description = 'Tratar Contatos',
     executables = executables
 )
