@@ -1,115 +1,149 @@
 import requests
 import json
 
-id = 1 # int(input("Digite uma ID: "))  # Exemplo: 1
-url = "http://politicos.olhoneles.org/api/v0/politicians/{}".format(id)
+
+def formatar_cpf(cpf):
+	return "{}.{}.{}-{}".format(cpf[0:3], cpf[3:6], cpf[6:9], cpf[9:11])
+
+
+id_politico = 1  # int(input("Digite uma ID: "))  # Exemplo: 1
+url = "http://politicos.olhoneles.org/api/v0/politicians/{}".format(id_politico)
 conteudo_url = requests.get(url)
 conteudo_json = json.loads(conteudo_url.text)
 print(conteudo_json)
-# Exiba as informações do político a partir da ID
 
-"""
-Político:
-Nomes alternativos:
-	Professor Edileudo
-CPF: 233.293.352-20
-Candidaturas:
-	1ª Candidatura:
-		Vereador
-		Cidade/Estado: Rio Branco/AC
-		Data: 01/10/2000
-		Status: Deferido
-		Eleito: Não
-"""
+conteudo_json["cpf"] = formatar_cpf(conteudo_json["cpf"])
 
-config = {
-	"Nomes Alternativos": {
-		"alternative_names": [
+config = [
+	{
+		"nome": "Nomes Alternativos",
+		"campo": "alternative_names",
+		"tipo": list,
+		"valor": [
 			{
-				"name": ""
+				"campo": "name",
+				"tipo": str,
+				"exibir_nome_campo": False
 			}
 		]
 	},
-	"Candidaturas - Status": {
-		"candidacies": [
-			{
-				"candidacy_status": {
-					"name": ""
-				}
-			}
-		]
+	{
+		"nome": "CPF",
+		"campo": "cpf",
+		"tipo": str
 	},
-	"Candidaturas - Cidades": {
-		"candidacies": [
+	{
+		"nome": "Candidaturas",
+		"campo": "candidacies",
+		"tipo": list,
+		"exibicao_item": "Candidatura",
+		"valor": [
 			{
-				"city": {
-					"name": ""
-				}
+				"nome": "Status",
+				"campo": "candidacy_status",
+				"tipo": dict,
+				"valor": [
+					{
+						"campo": "name",
+						"tipo": str
+					}
+				]
+			},
+			{
+				"nome": "Cidade",
+				"campo": "city",
+				"tipo": dict,
+				"valor": [
+					{
+						"campo": "name",
+						"tipo": str
+					}
+				]
+			},
+			{
+				"nome": "Estado",
+				"campo": "state",
+				"tipo": dict,
+				"valor": [
+					{
+						"campo": "siglum",
+						"tipo": str
+					}
+				]
+			},
+			{
+				"nome": "Cargos",
+				"campo": "institution",
+				"tipo": dict,
+				"valor": [
+					{
+						"nome": "Cargo",
+						"campo": "political_offices",
+						"tipo": list,
+						"valor": [
+							{
+								"campo": "name",
+								"tipo": str
+							}
+						]
+					}
+				]
+			},
+			{
+				"nome": "Eleito",
+				"campo": "elected",
+				"tipo": bool
 			}
 		]
 	}
-}
+]
 
 
-def teste(caminho, base=None):
-	if not base:
-		base = conteudo_json
-	if type(caminho) == dict:
-		for chave, valor in caminho.items():
-			if type(chave) == str:
-				base = base[chave]
-				teste(valor, base)
-	elif type(caminho) == list:
-		for chave, valor in enumerate(caminho):
-			for elemento in base:
-				teste(valor, elemento)
-	elif type(caminho) == str:
-		print("\t" + base)
-
-for exibicao, caminho in config.items():
-	print(exibicao + ":")
-	teste(caminho)
-
-"""
-Varrer o dicionário de config
-Exibição do campo é o index
-O valor do do dicionário determina como iremos varrer
-Se o tipo do valor for uma lista, devemos varrer a lista
-Se o tipo do valor for um dicionário, devemos varrer o dicionário
-Se o tipo for string, exibimos a informação
-"""
-
-"""
-def pegar_valor(caminho, base=None):
-	if not base:
+def exibir_item(item, base=False, item_anterior=""):
+	if base is False:
 		base = conteudo_json
 
-	tipo_caminho = type(caminho)
+	try:
+		if not item["campo"] is False:
+			base = base[item["campo"]]
+	except:
+		base = "Valor não encontrado."
+		item["tipo"] = str
 
-	if tipo_caminho == list:
-		print("Tipo do caminho é uma lista")
-		# Varrer lista da base, correspondente
-	elif tipo_caminho == dict:
-		print("Tipo do caminho é uma dicionário")
-	else:
-		valor = base[caminho]
-		print("Tipo do caminho é outra coisa")
+	if item["tipo"] == list:
+		indice = 1
 
-	return valor
+		for atributo in base:
+			if "exibicao_item" in item:
+				print("{}ª {}".format(indice, item["exibicao_item"]))
 
-for exibicao, caminho in config.items():
-	base = conteudo_json
-	print(exibicao + ":")
-	for item in caminho:
-		tipo_base = type(base)
-		if tipo_base == dict:
-			base = base.get(item)
-			# print(base)
-		elif tipo_base == list:
-			# print("Varrer nova base", base)
-			nova_base = base
-			for elemento in base:
-				# print(elemento)
-				nova_base = elemento[item]
-				print("\t" + nova_base)
-"""
+			if "valor" in item:
+				indice += 1
+
+				for valor in item["valor"]:
+					exibir_item(valor, atributo, item)
+
+				if indice < len(item["valor"]):
+					print()
+			else:
+				novo_item = item.copy()
+				novo_item["tipo"] = str
+				novo_item["campo"] = False
+				exibir_item(novo_item, atributo, item)
+
+	elif item["tipo"] == dict:
+		for valor in item["valor"]:
+			exibir_item(valor, base, item)
+	elif item["tipo"] == str or item["tipo"] == bool:
+		if item["tipo"] == bool:
+			base = "Sim" if base else "Não"
+			item_anterior = item
+
+		if "nome" in item_anterior and not ("exibir_nome_campo" in item and not item["exibir_nome_campo"]):
+			print("\t" + item_anterior["nome"] + ": " + base)
+		else:
+			print("\t" + base)
+
+for item in config:
+	print(item["nome"])
+	exibir_item(item)
