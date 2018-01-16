@@ -37,12 +37,7 @@ print()
 candidaturas = conteudo_json["candidacies"]
 print("Candidaturas:")
 for indice, candidatura in enumerate(candidaturas):
-	lista_caminho = [
-		"city",
-		"name"
-	]
-
-	valor = pegar_valor_dicionario(lista_caminho, candidatura)
+	valor = pegar_valor_dicionario(["candidacy_status", "name"], candidatura)
 	print(valor)
 	"""print("{}ª Candidatura:".format(indice + 1))
 	status = candidatura["candidacy_status"]["name"]
