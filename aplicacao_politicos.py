@@ -139,7 +139,8 @@ def exibir_item(item, base=False, item_anterior=""):
 			base = "Sim" if base else "Não"
 			item_anterior = item
 
-		if "nome" in item_anterior and not ("exibir_nome_campo" in item and not item["exibir_nome_campo"]):
+		if ("nome" in item_anterior and
+			not ("exibir_nome_campo" in item and not item["exibir_nome_campo"])):
 			print("\t" + item_anterior["nome"] + ": " + base)
 		else:
 			print("\t" + base)
