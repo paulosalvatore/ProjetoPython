@@ -37,14 +37,12 @@ print()
 candidaturas = conteudo_json["candidacies"]
 print("Candidaturas:")
 for indice, candidatura in enumerate(candidaturas):
-	valor = pegar_valor_dicionario(["candidacy_status", "name"], candidatura)
-	print(valor)
-	"""print("{}ª Candidatura:".format(indice + 1))
-	status = candidatura["candidacy_status"]["name"]
+	print("{}ª Candidatura:".format(indice + 1))
+	status = pegar_valor_dicionario(["candidacy_status", "name"], candidatura)
 	print("\tStatus: " + status)
 	eleito = formatar_booleano(candidatura["elected"])
 	print("\tEleito: " + eleito)
-	print()"""
+	print()
 
 
 """
@@ -58,5 +56,21 @@ Candidaturas    candidacies
 	Estado  state   name
 
 CPF     cpf
+Data de Nascimento
+Educação
 Etnia   ethnicity   name
+Gênero (exibir completo: Masculino ou Feminino)
+Estado Civil
+Nome
+Nacionalidade
+Ocupação
+Local de Nascimento
+Partidos Políticos
+	Data Inicial
+	Data Final
+	Nome do Partido
+	Sigla do Partido
+	Número no TSE
+Estado Atual
+
 """
