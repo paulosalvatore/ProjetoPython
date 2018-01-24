@@ -1,4 +1,5 @@
 import time
+from openpyxl import Workbook
 
 inicio = time.clock()
 
@@ -48,7 +49,33 @@ while linha:
 
 	linha = arquivo.readline()
 
+wb = Workbook()
+ws = wb.active
+
+ws.append(
+	[
+		"Nome",
+		"E-mail"
+	]
+)
+
 for contato in contatos:
-	print(contato)
+	# ws["A1"] = 42
+	linha = [
+		contato["nome"]
+	]
+
+	for email in contato["email"]:
+		linha.append(email)
+
+	ws.append(linha)
+
+wb.save("planilha1.xlsx")
 
 final = time.clock() - inicio
+
+print("Excel gravado com sucesso em {:.2f} segundos.".format(final))
+
+print("Aplicação finalizará após 3 segundos...")
+
+time.sleep(3)
