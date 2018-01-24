@@ -1,18 +1,3 @@
-dicionario = {1: 2, 3: 4}
-for indice, valor in dicionario.items():
-	print(indice, valor)
-
-lista = [1, 2, 3]
-for indice, valor in enumerate(lista):
-	print(indice, valor)
-
-
-
-
-
-
-
-
 
 """
 import json
