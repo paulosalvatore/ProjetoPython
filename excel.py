@@ -1,5 +1,10 @@
 from openpyxl import Workbook
+
 wb = Workbook()
 ws = wb.active
-ws["A1"] = 42
-wb.save("planilha1.xlsx")
+ws.title = "Cachorro"
+ws2 = wb.create_sheet("Zebra")
+ws3 = wb.create_sheet("Girafa")
+ws4 = wb.create_sheet("Gato")
+
+wb.save("planilha.xlsx")

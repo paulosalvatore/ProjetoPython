@@ -1,9 +1,19 @@
 import time
 from openpyxl import Workbook
+import tkinter as tk
+from tkinter import filedialog
+
+root = tk.Tk()
+root.withdraw()
+
+while True:
+	caminho_arquivo = filedialog.askopenfilename()
+
+	if caminho_arquivo != "":
+		break
 
 inicio = time.clock()
-
-arquivo = open("contatos.txt", "r")
+arquivo = open(caminho_arquivo, "r")
 linha = arquivo.readline()
 
 contatos = []
@@ -60,7 +70,6 @@ ws.append(
 )
 
 for contato in contatos:
-	# ws["A1"] = 42
 	linha = [
 		contato["nome"]
 	]
