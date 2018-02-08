@@ -1,12 +1,44 @@
 from openpyxl import Workbook
-from openpyxl.chart import Reference, BarChart3D
-from openpyxl.chart.marker import DataPoint
-from openpyxl.drawing.fill import PatternFillProperties, ColorChoice
+from openpyxl.drawing.image import Image
+import io
+import urllib3
+
+from openpyxl.styles import Font
 
 wb = Workbook()
 ws = wb.active
 ws.title = "Página 1"
 
+conteudo_linha = ["X"] * 10
+
+for i in range(10):
+	ws.append(conteudo_linha)
+
+coluna = "C"
+
+fonte_negrito = Font(bold=True)
+
+for linha in ws.rows:
+	for celula in linha:
+		if celula.column == coluna:
+			celula.font = fonte_negrito
+
+"""
+for linha in linhas:
+	ws.append(linha)
+
+largura_minima_celula = 20
+
+dims = {}
+for row in ws.rows:
+	for cell in row:
+		if cell.value:
+			dims[cell.column] = max((dims.get(cell.column, 0), len(str(cell.value))))
+for col, value in dims.items():
+	ws.column_dimensions[col].width = max(value, largura_minima_celula)
+"""
+
+"""
 linhas = [
 	["Casa Legislativa", "Alta", "Média", "Baixa", "Total"],
 	["Titulo 1", 1, 2, 3, 1],
@@ -38,5 +70,6 @@ for indice, cor in enumerate(cores):
 	chart.series[indice].graphicalProperties.solidFill = cor
 
 ws.add_chart(chart, "G5")
+"""
 
 wb.save("planilha.xlsx")
